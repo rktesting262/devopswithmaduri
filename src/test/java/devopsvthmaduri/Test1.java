@@ -9,7 +9,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Test1 {
 
-	//public static void main(String[] args) 
+	//public static void main(String[] args) { 
+	
 	@Test
 	public void method1()
 	{
@@ -18,6 +19,7 @@ public class Test1 {
 		WebDriverManager.chromedriver().setup();//down load latest chrome driver softwate
 		EdgeDriver driver = new EdgeDriver();
 		driver.get("https://www.facebook.com");
+		driver.close();
 		
 		System.out.println("edge");
 		Reporter.log("edge");
@@ -27,3 +29,4 @@ public class Test1 {
 	}
 
 }
+//}
